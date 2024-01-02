@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -8,8 +12,17 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #22874f;
+    background-image: url('./images/headerpic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
     color: #fff;
+}
+
+header > p{
+    background-color: rgba(58, 102, 64, 0.398);
 }
 
 nav {
@@ -39,6 +52,11 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+img {
+    width: 300px;
+    height: 200px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -48,6 +66,8 @@ footer {
 
 h1 {
     color: white;
+    background-color: rgba(0, 0, 0, 0.378);
+    display: inline-block;
 }
 
 h2 {
