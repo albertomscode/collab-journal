@@ -92,3 +92,11 @@ a {
 a:hover {
     color: #1e70bf;
 }
+
+footer img {
+    display: flex;
+    position: 24px;
+    width: auto;
+    height: 30px;
+    display: inline;
+}
