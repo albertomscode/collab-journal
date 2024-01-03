@@ -175,3 +175,12 @@ section img {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+footer img {
+    display: flex;
+    position: 24px;
+    width: auto;
+    height: 30px;
+    display: inline;
+}
+
