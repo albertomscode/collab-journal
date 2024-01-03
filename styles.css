@@ -12,17 +12,19 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-image: url('./images/headerpic.jpg');
+    background-image: url('./images/background11.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
+    top: 0;
+    z-index: 1000;
 }
 
 header > p{
-    background-color: rgba(58, 102, 64, 0.398);
+    background-color: rgba(58, 92, 102, 0.398);
 }
 
 nav {
@@ -30,6 +32,9 @@ nav {
     justify-content: center;
     background-color: #333;
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -45,16 +50,24 @@ nav a:hover {
 }
 
 section {
-    margin: 20px 0;
+    height: 100vh;
+    margin: 0;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
 }
 
 img {
-    width: 300px;
-    height: 200px;
+    width: 33%;
+    height: auto;
+}
+
+section img.small-image {
+    width: 30%;
+    margin-right: 20px;
+    float: left;
 }
 
 footer {
@@ -93,6 +106,76 @@ a:hover {
     color: #1e70bf;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.carrousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#contact {
+    background-image: url('./images/acontact.jpg');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(243, 253, 255, 0.756);
+
+}
+
+#home{
+    background-image: url('./images/Beatch4.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#destinations{
+    background-image: url('./images/beach2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about{
+    background-image: url('./images/a4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(243, 253, 255, 0.756);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 footer img {
     display: flex;
     position: 24px;
@@ -100,3 +183,4 @@ footer img {
     height: 30px;
     display: inline;
 }
+
