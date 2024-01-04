@@ -7,7 +7,7 @@ form.addEventListener("submit", async function (event) {
     const formValues = Object.fromEntries(formData);
     console.log(formValues);
     // send the message to the API
-    const response = await fetch("http://localhost:8080/messages", {
+    const response = await fetch("https://collab-journal-server.onrender.com/messages", {
         method: "POST",
         headers:{
         "Content-Type": "application/json",
@@ -29,7 +29,7 @@ async function getMessages() {
     messageContainer.innerHTML = '';
     
     // get messages from db with API
-    const response = await fetch("http://localhost:8080/messages");
+    const response = await fetch("https://collab-journal-server.onrender.com/messages");
     const messages = await response.json();
     
 
