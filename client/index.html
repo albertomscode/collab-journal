@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Travel Journal</title>
-        <link rel="icon" type="image/png" href="./" />
-        <link rel="stylesheet" href="./styles.css" />
-        <script defer src="./app.js" type="module"></script>
-    </head>
 
-    <body>
-        <header>
-            <h1>Travel Journal</h1>
-            <p class="PHeader">Explore our travel adventures and experiences</p>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Journal</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../client/styles.css" />
+    <script defer src="../client/app.js" type="module"></script>
+</head>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#destinations">Destinations</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<body>
+    <header>
+        <h1 id="headerh1">Travel Journal</h1>
+        <p class="PHeader">Explore our travel adventures and experiences</p>
 
-        <section id="home">
-            <h2>Welcome to our Travel Journal</h2>
-            <p>
-                Embark on a journey with us as we share our travel stories and
-                discoveries.
-            </p>
-        </section>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2 id="homeh2">Welcome to our Travel Journal</h2>
+        <p id="homep">
+            Embark on a mesmerizing journey with us as we unveil the enchanting tales of our globetrotting adventures. Within
+            the
+            pages of our Travel Journal, you'll discover a world painted with vibrant hues of cultures, landscapes, and
+            unforgettable moments. From the bustling streets of exotic cities to the serene tranquility of hidden gems, our
+            experiences are an invitation for you to join us in exploring the wonders of our planet.
+        
+            Feel the thrill of stepping into the unknown, as we share stories that transcend mere travelogue entries. Each word
+            is a brushstroke, crafting a canvas of discovery, curiosity, and awe. As avid explorers, we believe in not just
+            visiting a place but immersing ourselves in its essence, connecting with its people, and weaving the fabric of
+            memories that linger long after the journey ends.
+        
+            Let our narratives guide you through the alleys of historic cities, the vast expanses of untouched nature, and the
+            vibrant tapestry of diverse cultures. Whether you're an armchair traveler dreaming of distant lands or a fellow
+            wanderer seeking inspiration for your next escapade, our Travel Journal is a portal to a world where every page is
+            an open door to new possibilities.</p>
+    </section>
 
-        <section id="about">
-        <h2>About Us</h2>
-        <p>
+    <section id="about">
+        <h2 id="h2">About Us</h2>
+
+        <img class="small-image" src="../images/jorge-fernandez-salas-ChSZETOal-I-unsplash.jpg" alt="" />
+
+        <p id="aboutp">
             We are passionate travelers who love exploring new destinations and
             sharing our experiences.
+
+            Our collective love for diverse landscapes, rich histories, and the kaleidoscope of human experiences unites
+            us. As we traverse the globe, we don't merely collect passport stamps; we gather tales of encounters with
+            locals, savor flavors that dance on our palates, and breathe in the unique scents that define each corner of
+            the Earth.
+
+            In our Travel Journal, you'll find more than mere itineraries, you'll find the stories behind the
+            destinations. We invite you to walk alongside us on cobblestone streets, hike trails with awe-inspiring
+            vistas, and navigate the intricate tapestry of cultures that make our world so beautifully diverse.
+
+            So, join our community of passionate explorers!
         </p>
-        </section>
+    </section>
 
-        <section id="destinations">
-            <h2>Destinations</h2>
-            <div class="carrusel">
-                <div class="title">Discover places to go</div>
-                <button id="prevButton">&#9665;</button>
-                <img src="../images/douglas-lopez-IcQiQN_nYXw-unsplash.jpg" alt=""/>
-                <img src="../images/benjamin-davies-Oja2ty_9ZLM-unsplash.jpg" alt="" />
-                <img src="../images/jorge-fernandez-salas-ChSZETOal-I-unsplash.jpg" alt="" />
-                <button id="nextButton">&#9655;</button>
+    <section id="destinations">
+        <h2 id="destinationsh2">Destinations</h2>
+        <div class="carrousel">
+            <button id="prevButton">&#9665;</button>
+            <img src="../images/douglas-lopez-IcQiQN_nYXw-unsplash.jpg" alt="" />
+            <img src="../images/benjamin-davies-Oja2ty_9ZLM-unsplash.jpg" alt="" />
+            <img src="../images/jorge-fernandez-salas-ChSZETOal-I-unsplash.jpg" alt="" />
+            <button id="nextButton">&#9655;</button>
+        </div>
+        <div class="form-container">
+            <p id="formid">What our followers think:</p>
+                <form id="guestForm">
+                    <label>Name</label>
+                    <input name="firstName" placeholder="First Name" required />
+
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+
+                    <button>Add Message</button>
+
+                </form>
+                <ul id="messageContainer"> </ul>
             </div>
-            <div>“Customers” comments (load random comments from the database)
 
-                <div class="form-container">
 
-                    <form id="guestForm">
-                        <label>Name</label>
-                        <input name="firstName" placeholder="First Name" required/>
+    </section>
 
-                        <label>Message</label>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
+    <section id="contact">
+        <h2 id="contacth2">Contact Us</h2>
+        <p>Have questions or suggestions? Get in touch with us.</p>
+        <p>Email: travel@traveljournal.com</p>
+    </section>
 
-                        <button>Add Message</button>
+    <footer>
+        <p>&copy; 2024 Travel Journal. All rights reserved.</p>
+        <img src="../social-media/icons8-facebook-48.png">
+        <img src="../social-media/icons8-instagram-64.png">
+        <img src="../social-media/icons8-linkedin-48.png">
+    </footer>
+</body>
 
-                    </form>
-
-                </div>
-
-            <ul id="messageContainer"> </ul>
-
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions or suggestions? Get in touch with us.</p>
-            <p>Email: travel@traveljournal.com</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Travel Journal. All rights reserved.</p>
-        </footer>
-    </body>
 </html>
