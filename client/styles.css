@@ -256,6 +256,7 @@ background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   font-weight: bold;
+  height: 1100px;
 }
 
 #about{
@@ -275,6 +276,7 @@ background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   font-weight: bold;
+  height: 1400px;
 }
 
 #contact {
