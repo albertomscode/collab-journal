@@ -1,76 +1,3 @@
-@media only screen and (max-width: 480px){
-  html,body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .sections {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 01.5rem;
-    padding-right: 01.5rem;
-    justify-content: center;
-  }
-
-}
-
-@media only screen and (max-width: 1224px) and (min-width:480){
-  html,body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .sections {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 01.5rem;
-    padding-right: 01.5rem;
-    justify-content: center;
-  }
-
-  .first-section {
-    width: 100vw;
-  }
-}
-
-@media (max-width: 1230px) {
-  .header_title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .sections {
-    font-size: 1.5rem;
-  }
-}
-
-
-@media (min-width: 475px) {
-  .sections {
-    max-width: 475px;
-  }
-}
-@media (min-width: 740px) {
-  .sections {
-    max-width: 740px;
-  }
-}
-
-@media (min-width: 1250px) {
-  .sections {
-    max-width: 1250px;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -199,17 +126,6 @@ h2 {
   border-radius: 20px;
 }
 
-#home {
-height: 700px;
-display: inline-block;
-width: 100%;
-background-size: cover;
-}
-
-#contact {
-  height: 600px;
-}
-
 #aboutp{
   background-color: #84cbab6e;
   color: #54a581;
@@ -256,7 +172,7 @@ background-size: cover;
   background-repeat: no-repeat;
   text-transform: uppercase;
   font-weight: bold;
-  height: 1100px;
+  width: 100%;
 }
 
 #about{
@@ -290,6 +206,7 @@ background-size: cover;
   padding: 70px;
   background-color: #85aeba;
   overflow: 50%;
+  height: 100vh;
 }
 
 ul {
@@ -382,4 +299,78 @@ footer img {
   width: auto;
   height: 60px;
   display: inline;
+}
+
+
+@media only screen and (max-width: 480px){
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .sections {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 01.5rem;
+    padding-right: 01.5rem;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 1224px) and (min-width:480){
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .sections {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 01.5rem;
+    padding-right: 01.5rem;
+    justify-content: center;
+  }
+
+  .first-section {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1230px) {
+  .header_title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sections {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (min-width: 475px) {
+  .sections {
+    max-width: 475px;
+  }
+}
+@media (min-width: 740px) {
+  .sections {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .sections {
+    max-width: 1250px;
+  }
 }
